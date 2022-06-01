@@ -11,9 +11,9 @@ The main script file is `BGRL_FebAA.py` used for training on the transductive ta
 To run BGRL on a dataset from the transductive setting, use `BGRL_FebAA.py` and one of the configuration files that can be found in `config/`.
 For example, to train on the wiki-cs dataset, use the following command:
 
-`python BGRL_FebAA.py --flagfile=config/wiki-cs_FeBAA.cfg`
+`python BGRL_FebAA.py --flagfile=config/*-wiki-cs_FeBAA.cfg`
 
-Above same command will be used to regenerate the results as seeds values are given in `.cfg` files.
+Above same command can be used to regenerate the results as seeds values are given in `.cfg` files, while `*` will be replaced with `inf` or `rand`.
 
 
 ### Verify Test Results: 
