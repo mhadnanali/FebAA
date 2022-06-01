@@ -3,7 +3,7 @@ Features Based Adaptive Augmentation for Graph Contrastive Learning
 
 
 ## BGRL+FebAA
-BGRL+FebAA can be executed using BGRL official code available at the [github](https://github.com/nerdslab/bgrl)  repository, files uploaded above, needed to be embedded in relevant folders. 
+BGRL+FebAA can be executed using BGRL official code available at the [github](https://github.com/nerdslab/bgrl)  repository, files uploaded in `BGRL+FebAA` folder, needed to be placed in relevant folders given in [BGRL code](https://github.com/nerdslab/bgrl)  . 
 The main script file is `BGRL_FebAA.py` used for training on the transductive task datasets and configuration files can be found in `./config` folder. 
 
 ### Regenerate Training Results: 
