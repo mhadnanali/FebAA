@@ -161,7 +161,7 @@ def main(argv):
         if epoch % FLAGS.eval_epochs == 0:
             eval(epoch)
     # save encoder weights
-    torch.save({'model': model.online_encoder.state_dict()}, os.path.join(FLAGS.logdir, 'bgrl-amazon-photos '+LvM+pf+'.pt'))
+    torch.save({'model': model.online_encoder.state_dict()}, os.path.join(FLAGS.logdir, 'bgrl-'+dsName+"-"+LvM+pf+'.pt'))
 
 
 if __name__ == "__main__":
