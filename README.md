@@ -26,7 +26,7 @@ Test accuracies under linear evaluation are reported on TensorBoard. To start th
 
 ||  WikiCS | Amazon Computers   | Amazon Photos  | CoAuthorCS   | CoAuthorPhy  |
 | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
-|Inf| 80.59&plusmn;0.58 |  91.07&plusmn;0.20 | 93.74&plusmn;0.19  | 93.55&plusmn;0.14 |  95.89&plusmn;0.06  |
+|Inf| 80.59&plusmn;0.58 |  91.07&plusmn;0.20 | 93.74&plusmn;0.19  | 93.55&plusmn;0.14 |  95.90&plusmn;0.08  |
 |Rand| &plusmn; |  &plusmn; | &plusmn;  | &plusmn;  | &plusmn;  | &plusmn;  |
 
 
