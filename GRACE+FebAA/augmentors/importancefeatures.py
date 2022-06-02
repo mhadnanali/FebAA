@@ -26,12 +26,10 @@ class ImportanceFeatures(Augmentor):
 
 
     def TopFeatureFinder(self,data,drop_prob,device,percentage,dsName,x,LeastOrMost,infvsRand):
-
+            infvsRand="Features/"+infvsRand
             totalFeatures = x.size()[1]
             totalRows = x.size()[0]
             absolute_path = os.path.abspath(infvsRand+" Features "+dsName+".csv")
-            print("Full path: " + absolute_path)
-            print("Directory Path: " + os.path.dirname(absolute_path))
             if (os.path.isfile(infvsRand+" Features "+dsName+".csv")) == True:
                     resultsAnalysis = pd.read_csv(infvsRand+" Features "+dsName+".csv")
                     topfeatures = resultsAnalysis['Range']
@@ -49,17 +47,10 @@ class ImportanceFeatures(Augmentor):
                 #incase of Most the most important features will be taken for masking
                 topfeatures.reverse()
                 topfeatures = topfeatures[:int(tenper)]
-                print("Dropping Most imp features")
-            print(percentage, " Features to be dropped from  ", len(topfeatures))
-            print(LeastOrMost, " Features will be dropped ",  totalFeatures * totalRows * percentage * drop_prob)
-            print(topfeatures)
             return topfeatures
 
     def DropFeatures(self,X, candidateCF,indices, drop_prob, device,topfeatures):
-        print("DropFeatures: Total Removing", len(topfeatures))
         mask = torch.empty(candidateCF.size(), device=device).uniform_() >= drop_prob
         output = candidateCF.mul(mask)
         X[:, indices] = output
         return X
-
-
