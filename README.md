@@ -42,7 +42,7 @@ Test accuracies under linear evaluation are reported on TensorBoard. To start th
 |Rand| **87.48&plusmn;0.50** |  75.36&plusmn;1.29 | 30.35&plusmn;1.09 | 
 
 
-# Hyper-parameters to Recreate Results
+### Hyper-parameters to Recreate Results
 
 Below table contains the hyper-paramter values to recreate the results, where 1 & 2 indicates the graph view 1 and graph view 2. 
 
