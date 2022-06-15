@@ -38,5 +38,18 @@ Test accuracies under linear evaluation are reported on TensorBoard. To start th
 
 ||  Cora | CiteSeer   | Actor  |
 | ------------ | ------------ | ------------ | ------------ |
-|Inf| 87.30&plusmn;1.12 |  **76.26&plusmn;1.46** | 30.58&plusmn;1.06  | 
-|Rand| **87.48&plusmn;0.50** |  75.36&plusmn;1.29 | **30.35&plusmn;1.09**  | 
+|Inf| 87.30&plusmn;1.12 |  **76.26&plusmn;1.46** | **30.58&plusmn;1.06**  | 
+|Rand| **87.48&plusmn;0.50** |  75.36&plusmn;1.29 | 30.35&plusmn;1.09 | 
+
+
+# Hyper-parameters to Recreate Results
+
+Below table contains the hyper-paramter values to recreate the results, where 1 & 2 indicates the graph view 1 and graph view 2. 
+
+|  Dataset | Edge Drop Prob.  1 & 2  | Feature Ratio 1 & 2  | Feature Drop Prob. 1 & 2  | manual_seed  |random.seed |Least or Most |
+| ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |------------ |
+|Cora| 0.4 & 0.2  | 100% & 80% | 0.4 & 0.375 | 125656 | 896146|Least |
+|CiteSeer| 0.4 & 0.2 | 100% & 70% | 0.4 & 0.43 | 553358  | 559648 | Most |
+|Actor| 0.3 & 0.3 | 100% & 30% | 0.3 & 1 | 8833511 | 7396411|Most |
+
+
