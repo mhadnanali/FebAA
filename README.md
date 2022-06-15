@@ -34,3 +34,9 @@ Test accuracies under linear evaluation are reported on TensorBoard. To start th
 
 
 ## GRACE+FebAA
+
+
+||  Cora | CiteSeer   | Actor  |
+| ------------ | ------------ | ------------ | ------------ |
+|Inf| 87.30&plusmn;1.12 |  **76.26&plusmn;1.46** | 30.58&plusmn;1.06  | 
+|Rand| **87.48&plusmn;0.50** |  75.36&plusmn;1.29 | **30.35&plusmn;1.09**  | 
