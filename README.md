@@ -35,6 +35,11 @@ Test accuracies under linear evaluation are reported on TensorBoard. To start th
 
 ## GRACE+FebAA
 
+Grace+FebAA is implemented using [PyGCL](https://github.com/PyGCL/PyGCL). To execute the codes, one need to install [PyGCL](https://github.com/PyGCL/PyGCL) and place the augmentors folder files from this repository in [PyGCL](https://github.com/PyGCL/PyGCL) augmentors folder. Then execute the below command to get results. Make sure to enter relevent seeds given in the last table, dataset in the code (if you are trying to recreate our results). 
+
+`python GRACE+FebAA.py`
+
+We intentionally did not create any configration ( `.cfg` or `.yaml` ) file for input to keep it same as [PyGCL](https://github.com/PyGCL/PyGCL). 
 
 ||  Cora | CiteSeer   | Actor  |
 | ------------ | ------------ | ------------ | ------------ |
