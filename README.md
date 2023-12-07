@@ -1,5 +1,6 @@
 # FebAA
 Features Based Adaptive Augmentation for Graph Contrastive Learning
+(https://www.sciencedirect.com/science/article/pii/S1051200423004074)
 
 
 ## BGRL+FebAA
@@ -56,5 +57,7 @@ Below table contains the hyper-paramter values to recreate the results, where 1 
 |Cora| 0.4 & 0.2  | 100% & 80% | 0.4 & 0.375 | 125656 | 896146|Least |
 |CiteSeer| 0.4 & 0.2 | 100% & 70% | 0.4 & 0.43 | 553358  | 559648 | Most |
 |Actor| 0.3 & 0.3 | 100% & 30% | 0.3 & 1 | 8833511 | 7396411|Most |
+
+
 
 
